@@ -1,6 +1,4 @@
-
-												DevOps Essentials (CLoudGuru)
-=====================================================================================================================================================
+						DevOps Essentials (CLoudGuru)
 
 Dev = Development team | Ops = Operations
 DevOps is a culture of colaboration between the teamstounify software develoipment and operations. It is a group of best practices, not a standard.
@@ -64,27 +62,20 @@ MONOTORING
 - Collection & presentation of data regarding performance and stability of services infrastructure
 - It can be presented in different forms such as real-time or graphs or both
 - Allows to do a postmortem analysis where teams can discuss what went wrong
-+ Faster recovering + More visibility for teams
-+ Better route cause analysis + Automated response
++ Faster recovering + More visibility for teams + Better route cause analysis + Automated response
 
 MICROSERVICES
 - Architecture that breaks an application into a collection of small loosely-couple services
 - Used for monolithic architectures where they can interact to each other by well defined APIs.
 + Modularity - they are independent of each other but they can communicate between them.
-+ Technical flexibility - We can use the best tool for each job
-+ Optimize salability
++ Technical flexibility - We can use the best tool for each job + Optimize salability
 
 DEVOPS TOOLS
 	AUTOMATION
-		> Java = Maven, Gradle
-		> JS = NPM, Grunt, Gulp
-		> Make = used on Linux servers
-		> Packer = Build machine images and containers
+		> Java = Maven, Gradle, JS = NPM, Grunt, Gulp, Make = used on Linux servers, Packer = Build machine images and containers
 
 	CONTINUOUS INTEGRATION
-		> Jenkings = fork of hudson
-		> Travis-ci = github integration
-		> Bamboo = not free but integrates with atlasian tools
+		> Jenkings = fork of hudson, Travis-ci = github integration, Bamboo = not free but integrates with atlasian tools
 
 	CONFIGURATION MANAGEMENT
 		> Ansible = Declarative declaration > Uses YAML config files to manage it.
@@ -94,21 +85,14 @@ DEVOPS TOOLS
 
 	CONTAINERS & VMS
 		> Hypervisor - Runs on metal infrastructure and manages VMs
-		> VMWARE, Microsoft Hyper V, Citrix XenServer
-		> Docker
+		> VMWARE, Microsoft Hyper V, Citrix XenServer, Docker
 
 	MONOTORING
-		> Inffrastrucure monitoring > CPU, RAM, etc
-		> App performance > Response time, logs
-		> SENSU (infrastructure)
-		> New relic (Saas-infrastructure)
-		> App dynamic
+		> Inffrastrucure monitoring > CPU, RAM, etc; > App performance > Response time, logs
+		> SENSU (infrastructure), New relic (Saas-infrastructure), App dynamic
 
 	ORQUESTRATION
-		> Docker swarm
-		> Kubernetes
-		> Rookkeeper (Apache)
-		> Terraform (Intergrates with AWS, Ansible)
+		> Docker swarm, Kubernetes, Rookkeeper (Apache), Terraform (Intergrates with AWS, Ansible)
 
 DEVOPS & CLOUD
 						IASS	PASS	SAAS	FAAS
@@ -123,46 +107,3 @@ DEVOPS & CLOUD
 	STORAGE				Host    Host    Host    Host    
 	NETWORKING			Host    Host    Host    Host    
 	EXAMPLES		  AWS EC2	AWS EL
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
