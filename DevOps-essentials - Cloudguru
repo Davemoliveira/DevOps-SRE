@@ -1,1 +1,168 @@
 
+												DevOps Essentials (CLoudGuru)
+=====================================================================================================================================================
+
+Dev = Development team | Ops = Operations
+DevOps is a culture of colaboration between the teamstounify software develoipment and operations. It is a group of best practices, not a standard.
+It grew from Agile, that serves to develop software in small increments and have frequent cycles. The main goals of DevOps is to delivery/colaborate
+on botm teams goals (speed/stability). Main goals: Fast-time-to-market; Few production fails; Immediate recovery from fails(rollbacks);
+
+ -----------      ------      ------------
+ | DEVELOPER | + |  QA  | +  | OPERATIONS |		BUILD   >   INTEGRATE   >   TEST   >   DEPLOY
+ -----------      ------      ------------
+  
+- Developers write the code, commit trioggers, auto build integration and tests
+- QA gets the code nearly immediately
+- Once ready, auto deployment kicks in to production
+- When code fails, automatic monitoring soft. notifies them; Rollback is deployed to previous version
++ Automation: Easier to deploy and keep stability | More consistency, building, testing
++ Deployment: More frequent and fast time-to-market
+
+BUILD INOVATION
+- Automation: Automatic process of preparing code for deployment to live environment
+- Code needs to be compuled, linted, modified, transform, test, etc
+	- Automation is independent of IDE(Integrated developement environment)
+	- Agnostic of other machines configuration and code can run on other machines.
+
+CONTINUOUS INTEGRATION (CI)
+- Practice of frequent merge code changes by developers.
+- It is done with a CI server. Devs commit code changes, multiple times per day.
+- CI notifies automatically if there's an issue. 
++ Early detection +Eliminate scramble + Frequent releases
++ Continuous testing + Good coding practices
+
+CONTINUOUS DELIVERY & DEPLOYMENT
+- CD is the practice of maintain code in a deployment state. The code is always ready to be deployed.
+- CDE is the pracice of frequent deploys with small changes to production. 
+- Each code version will go by different stages [Auto.build, auto.test, wich will result into an artifact/package]
++ Faster-to-market + Less issues on the deployment process + Lower risk
++ Reliable rollback + More deployments
+
+INFRASTUCTURE AS CODE (IAC)
+Manage/provising infrastructure as code and automation
+- For code change, config files can be used with automation tools
+- Commits can be used to send the files by source control solutions.
+- Automation tools to enact changes defined in code/configuration files
++ Consistency - Create/manage resources | Reusability: Make changes on different hosts
++ Scalability: Set new instances in seconds
++ Simplicity and less complexibility 
+
+CONFIGURATION MANAGEMENT
+- Maintain and change state of poeces of infrastructure in a constant stable environment
+- Allows to mitigate configuration difficulty
++ Saves time +Insight by having the state of all pieces of a large complex infrastructure
++ Maintenance-easier to change while being stable
++ Less configuration drif which keeps standard configurations across all hosts
+
+ORQUESTRATION
+- Automation that supports process and workflows (e.g provisioning resources)
++ Scalable - resources can be increased/decreated quickly to match changing needs
++ Stability - Automation tools can auto-respond for fix issues. | Save time - high level management
++ Self-service - Can be served as resource for customer + Granular - insight on how resources are being used
+
+MONOTORING
+- Collection & presentation of data regarding performance and stability of services infrastructure
+- It can be presented in different forms such as real-time or graphs or both
+- Allows to do a postmortem analysis where teams can discuss what went wrong
++ Faster recovering + More visibility for teams
++ Better route cause analysis + Automated response
+
+MICROSERVICES
+- Architecture that breaks an application into a collection of small loosely-couple services
+- Used for monolithic architectures where they can interact to each other by well defined APIs.
++ Modularity - they are independent of each other but they can communicate between them.
++ Technical flexibility - We can use the best tool for each job
++ Optimize salability
+
+DEVOPS TOOLS
+	AUTOMATION
+		> Java = Maven, Gradle
+		> JS = NPM, Grunt, Gulp
+		> Make = used on Linux servers
+		> Packer = Build machine images and containers
+
+	CONTINUOUS INTEGRATION
+		> Jenkings = fork of hudson
+		> Travis-ci = github integration
+		> Bamboo = not free but integrates with atlasian tools
+
+	CONFIGURATION MANAGEMENT
+		> Ansible = Declarative declaration > Uses YAML config files to manage it.
+		> Puppet = managed by UI, creates modules, users control server
+		> Chef = Procedural configuration - We write scripts to set environments on the state we want.
+		> Salt = Declarative config - Agents(minions) and Server(Master), Events driven for automation
+
+	CONTAINERS & VMS
+		> Hypervisor - Runs on metal infrastructure and manages VMs
+		> VMWARE, Microsoft Hyper V, Citrix XenServer
+		> Docker
+
+	MONOTORING
+		> Inffrastrucure monitoring > CPU, RAM, etc
+		> App performance > Response time, logs
+		> SENSU (infrastructure)
+		> New relic (Saas-infrastructure)
+		> App dynamic
+
+	ORQUESTRATION
+		> Docker swarm
+		> Kubernetes
+		> Rookkeeper (Apache)
+		> Terraform (Intergrates with AWS, Ansible)
+
+DEVOPS & CLOUD
+						IASS	PASS	SAAS	FAAS
+	FUNCTIONS			 x		 x		 x		Host
+	APPLICATION			user    User    Host    Host        
+	DATA				User    User    Host    Host    
+	RUNTIME				User    Host    Host    Host    
+	MIDDLEWARE			User    Host    Host    Host    
+	ORQUESTRATION		Host    Host    Host    Host    
+	VIRTUALIZ			Host    Host    Host    Host    
+	SERVERS				Host    Host    Host    Host    
+	STORAGE				Host    Host    Host    Host    
+	NETWORKING			Host    Host    Host    Host    
+	EXAMPLES		  AWS EC2	AWS EL
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
